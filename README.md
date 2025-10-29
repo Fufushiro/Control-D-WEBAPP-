@@ -135,6 +135,35 @@ Controla:
    - Clic en el botón "Run" (▶) en Android Studio
    - O ejecutar: `./gradlew installDebug`
 
+### Configuración del Keystore para Builds Firmados
+
+Para compilar versiones de release firmadas, necesitas configurar el keystore:
+
+1. **Crear/Editar `local.properties`** (este archivo NO debe subirse a git)
+   ```properties
+   sdk.dir=/ruta/a/tu/Android/Sdk
+   
+   # Configuración del Keystore
+   KEYSTORE_FILE=/ruta/completa/al/KEYSTORE/Keystore.jks
+   KEYSTORE_PASSWORD=tu_password_del_keystore
+   KEY_ALIAS=tu_alias
+   KEY_PASSWORD=tu_password_de_la_key
+   ```
+
+2. **Verificar que el keystore existe** en `KEYSTORE/Keystore.jks`
+
+3. **El archivo `.gitignore` ya protege**:
+   - `local.properties` (con tus credenciales)
+   - `*.jks` (archivos keystore)
+   - Directorio `KEYSTORE/`
+
+**⚠️ IMPORTANTE**: 
+- Nunca compartas tu keystore ni tus contraseñas
+- Guarda una copia de respaldo del keystore en un lugar seguro
+- Si pierdes el keystore, no podrás actualizar tu app en Play Store
+
+Para más detalles, consulta: `KEYSTORE_CONFIG_INSTRUCTIONS.md`
+
 ### Generar APK
 
 Para compilar un APK de release:

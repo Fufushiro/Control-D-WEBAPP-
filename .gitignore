@@ -1,0 +1,52 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+.gradle/
+
+# Gradle files
+.gradle
+/local.properties
+
+# Android Studio
+.idea/
+*.iml
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+
+# Keystore files - IMPORTANT: Never commit these!
+*.jks
+*.keystore
+local.properties
+
+# Signing keys directories
+KEYSTORE/
+keystore/
+KEYSTORE*/
+
+# NDK
+obj/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+

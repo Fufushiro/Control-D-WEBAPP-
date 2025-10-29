@@ -1,0 +1,132 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.controldwebapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.15.0] /home/fufushiro/.gradle/caches/8.9/transforms/3e85dc3a27e7bbf172ac49206d18ddee/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.controldwebapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.15.0] /home/fufushiro/.gradle/caches/8.9/transforms/3e85dc3a27e7bbf172ac49206d18ddee/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.15.0] /home/fufushiro/.gradle/caches/8.9/transforms/3e85dc3a27e7bbf172ac49206d18ddee/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.example.controldwebapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.15.0] /home/fufushiro/.gradle/caches/8.9/transforms/3e85dc3a27e7bbf172ac49206d18ddee/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.15.0] /home/fufushiro/.gradle/caches/8.9/transforms/3e85dc3a27e7bbf172ac49206d18ddee/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:6:5-25:19
+20        android:allowBackup="true"
+20-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.15.0] /home/fufushiro/.gradle/caches/8.9/transforms/3e85dc3a27e7bbf172ac49206d18ddee/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+22        android:extractNativeLibs="false"
+23        android:icon="@android:drawable/sym_def_app_icon"
+23-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:9:9-58
+24        android:label="ControlD Web"
+24-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:8:9-37
+25        android:roundIcon="@android:drawable/sym_def_app_icon"
+25-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:10:9-63
+26        android:supportsRtl="true"
+26-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:11:9-35
+27        android:theme="@style/Theme.ControlDWebApp" >
+27-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:12:9-52
+28        <activity
+28-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:14:9-23:20
+29            android:name="com.example.controldwebapp.MainActivity"
+29-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:15:13-67
+30            android:configChanges="keyboardHidden|orientation|screenSize"
+30-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:17:13-74
+31            android:exported="true"
+31-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:16:13-36
+32            android:hardwareAccelerated="true" >
+32-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:18:13-47
+33            <intent-filter>
+33-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:19:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:20:17-69
+34-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:20:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:21:17-77
+36-->/home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <provider
+40-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+41            android:name="androidx.startup.InitializationProvider"
+41-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+42            android:authorities="com.example.controldwebapp.androidx-startup"
+42-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+43            android:exported="false" >
+43-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+44            <meta-data
+44-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+45-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+46                android:value="androidx.startup" />
+46-->[androidx.emoji2:emoji2:1.3.0] /home/fufushiro/.gradle/caches/8.9/transforms/268b965e38ac6c3d7965eb62437bdecd/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+47            <meta-data
+47-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/fufushiro/.gradle/caches/8.9/transforms/36c498859f8ef032ab3bccbc4ca6ea99/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/fufushiro/.gradle/caches/8.9/transforms/36c498859f8ef032ab3bccbc4ca6ea99/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+49                android:value="androidx.startup" />
+49-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/fufushiro/.gradle/caches/8.9/transforms/36c498859f8ef032ab3bccbc4ca6ea99/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+50            <meta-data
+50-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+51                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+51-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+52                android:value="androidx.startup" />
+52-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+53        </provider>
+54
+55        <receiver
+55-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+56            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+56-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+57            android:directBootAware="false"
+57-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+58            android:enabled="true"
+58-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+59            android:exported="true"
+59-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+60            android:permission="android.permission.DUMP" >
+60-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+61            <intent-filter>
+61-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+62                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+62-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+62-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+63            </intent-filter>
+64            <intent-filter>
+64-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+65                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+65-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+65-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+66            </intent-filter>
+67            <intent-filter>
+67-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+68                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+68-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+68-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+69            </intent-filter>
+70            <intent-filter>
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+71                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/fufushiro/.gradle/caches/8.9/transforms/19a04c9820552e8deab86a79cc2427e8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+72            </intent-filter>
+73        </receiver>
+74    </application>
+75
+76</manifest>

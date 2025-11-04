@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#2196F3">
+    <meta name="description" content="Control D Web App">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <title>Control D Web</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Indicator -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- App Container - La UI nunca se recarga -->
+    <div id="app-container" class="app-container">
+        <!-- Header - Estructura fija -->
+        <header id="app-header" class="app-header">
+            <div class="header-content">
+                <h1 id="app-title">Control D</h1>
+                <div class="header-actions">
+                    <button id="refresh-btn" class="icon-btn" title="Actualizar datos">
+                        <span class="icon">🔄</span>
+                    </button>
+                    <span id="status-indicator" class="status-indicator offline">●</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area - Solo se actualizan los datos -->
+        <main id="main-content" class="main-content">
+            <!-- Este contenido se actualiza dinámicamente -->
+            <div id="dynamic-content" class="dynamic-content">
+                <p class="placeholder">Esperando datos del servidor...</p>
+            </div>
+        </main>
+
+        <!-- Footer - Estructura fija -->
+        <footer id="app-footer" class="app-footer">
+            <p id="last-update">Última actualización: Nunca</p>
+            <p id="cache-status">Cache: Inicializando...</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="db-manager.js"></script>
+    <script src="api-client.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado:', registration.scope);
+
+                        // Actualizar Service Worker cuando esté disponible
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    console.log('Nueva versión disponible');
+                                    // Opcional: mostrar notificación al usuario
+                                }
+                            });
+                        });
+                    })
+                    .catch(err => console.error('Error al registrar Service Worker:', err));
+            });
+        }
+    </script>
+</body>
+</html>
+

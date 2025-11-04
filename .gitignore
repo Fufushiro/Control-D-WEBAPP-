@@ -17,8 +17,9 @@ build/
 .gradle/
 
 # Gradle files
-.gradle
+.gradle/
 /local.properties
+gradle-wrapper.jar
 
 # Android Studio
 .idea/
@@ -27,26 +28,85 @@ build/
 /captures
 .externalNativeBuild
 .cxx
+local.properties
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
 
 # Keystore files - IMPORTANT: Never commit these!
 *.jks
 *.keystore
-local.properties
+*.p12
+*.pem
+key.properties
+keystore.properties
 
 # Signing keys directories
 KEYSTORE/
 keystore/
 KEYSTORE*/
+keys/
+signing/
+
+# Sensitive files
+local.properties
+secrets.properties
+google-services.json
+firebase.json
 
 # NDK
 obj/
 
+# IntelliJ
+*.ipr
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/jarRepositories.xml
+
 # Logs
 *.log
+*.log.*
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # Windows
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Release files
+*.apk
+*.aab
+app/release/
+app/build/outputs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
 

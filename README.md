@@ -1,4 +1,4 @@
-# ControlD WebApp v1.0.0
+# ControlD WebApp v1.0.5
 
 Aplicación Android nativa desarrollada en Kotlin que proporciona una experiencia de navegación completa para el servicio web de ControlD (https://controld.com/) mediante un WebView optimizado.
 
@@ -266,7 +266,7 @@ Este proyecto es un ejemplo educativo y de demostración.
 
 ## 👨‍💻 Desarrollo
 
-**Versión**: 1.0.0  
+**Versión**: 1.0.5  
 **Compilado con**: Kotlin + Android SDK 35  
 **Arquitectura**: Single Activity + WebView
 

@@ -1,4 +1,4 @@
-# ControlD WebApp v1.0.5
+# ControlD WebApp v1.10
 
 Aplicación Android nativa desarrollada en Kotlin que proporciona una experiencia de navegación completa para el servicio web de ControlD (https://controld.com/) mediante un WebView optimizado, incluyendo una **Progressive Web App (PWA)** integrada con capacidades offline.
 
@@ -10,7 +10,14 @@ Esta aplicación funciona como un contenedor nativo (WebView wrapper) para el si
 
 ControlD es un servicio de DNS personalizable que permite controlar y filtrar el tráfico de internet, bloqueando anuncios, rastreadores, malware y contenido no deseado a nivel de DNS.
 
-## 🆕 Novedades en v1.0.5
+## 🆕 Novedades en v1.10
+
+### 🔄 Pull to Refresh Mejorado
+- ✅ **Doble Swipe para Refrescar**: Ahora se requieren **2 swipes consecutivos** hacia abajo para refrescar la página
+- ✅ **Prevención de Refrescos Accidentales**: Evita que se refresque la página por accidente al navegar
+- ✅ **Feedback Visual Mejorado**: Mensajes con emojis que indican cuántos swipes faltan
+- ✅ **Timeout Inteligente**: El contador se resetea automáticamente después de 2 segundos de inactividad
+- ✅ **Código Configurable**: Constantes para ajustar fácilmente el número de swipes y el timeout
 
 ### 🌐 Progressive Web App (PWA) Integrada
 La aplicación ahora incluye una **webapp moderna con arquitectura PWA** ubicada en `app/src/main/assets/`:
@@ -112,7 +119,8 @@ La aplicación implementa un WebView Android con todas las funcionalidades neces
 - **Indicador de Carga**: Barra de progreso circular mientras se cargan las páginas
 - **Pantalla Completa**: Experiencia inmersiva sin barras de navegación del navegador
 - **Estado de Conexión**: Indicador visual (online/offline) en tiempo real
-- **Botón de Actualización**: Refresh manual de datos del servidor
+- **Pull to Refresh**: Desliza hacia abajo **2 veces consecutivas** para refrescar la página (previene refrescos accidentales)
+- **Timeout Inteligente**: El contador de swipes se reinicia después de 2 segundos de inactividad
 
 ### 🎨 Interfaz de Usuario Moderna
 
@@ -482,8 +490,10 @@ ControlDWEBAPP/
 - No incluye acceso a cámara o geolocalización (se puede habilitar con permisos adicionales)
 - Las notificaciones web push no están implementadas
 
-## ✅ Funcionalidades Implementadas (v1.0.5)
+## ✅ Funcionalidades Implementadas (v1.10)
 
+- ✅ **Double Swipe to Refresh** con timeout inteligente
+- ✅ **Feedback visual mejorado** con emojis y mensajes dinámicos
 - ✅ **Service Worker** con estrategias de caché
 - ✅ **IndexedDB** para almacenamiento persistente
 - ✅ **Funcionamiento offline** completo
@@ -603,7 +613,7 @@ Este proyecto es un ejemplo educativo y de demostración.
 
 ## 👨‍💻 Desarrollo
 
-**Versión**: 1.0.5  
+**Versión**: 1.10  
 **Compilado con**: Kotlin + Android SDK 35  
 **Arquitectura**: Single Activity + WebView
 

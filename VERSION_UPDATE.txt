@@ -1,0 +1,65 @@
+===============================================
+   ACTUALIZACIÓN A VERSIÓN 1.10 COMPLETADA
+===============================================
+📅 Fecha: 6 de Noviembre, 2025
+🔢 Version Code: 10
+📱 Version Name: 1.10
+📦 APK Size: 6.3 MB
+===============================================
+           ARCHIVOS MODIFICADOS
+===============================================
+✅ app/build.gradle.kts
+   - versionCode: 5 → 10
+   - versionName: "1.0.5" → "1.10"
+✅ app/src/main/java/com/example/controldwebapp/MainActivity.kt
+   - Agregadas constantes configurables
+   - Mejorada lógica de doble swipe
+   - Feedback visual enriquecido con emojis
+✅ README.md
+   - Actualizado título a v1.10
+   - Nueva sección "Novedades en v1.10"
+   - Documentación de doble swipe
+   - Actualizada información de versión
+===============================================
+           ARCHIVOS NUEVOS
+===============================================
+📄 CHANGELOG.md
+   - Historial completo de versiones
+   - Formato estandarizado
+📄 VERSION_1.10_SUMMARY.md
+   - Resumen detallado de cambios
+   - Guía de usuario y desarrollador
+===============================================
+         NUEVA FUNCIONALIDAD PRINCIPAL
+===============================================
+🔄 DOBLE SWIPE PARA REFRESCAR
+Características:
+  ✓ Requiere 2 swipes consecutivos
+  ✓ Previene refrescos accidentales
+  ✓ Timeout inteligente de 2 segundos
+  ✓ Feedback visual mejorado
+  ✓ Mensajes dinámicos con emojis
+  ✓ Código configurable y mantenible
+Flujo de Usuario:
+  1. Swipe Down → "⬇️ Desliza 1 vez más"
+  2. Swipe Down → "🔄 Refrescando..."
+  3. Si pasan 2s → Contador se resetea
+===============================================
+              BUILD STATUS
+===============================================
+✅ BUILD SUCCESSFUL in 6s
+✅ 33 actionable tasks executed
+✅ 0 errores de compilación
+✅ APK generado correctamente
+✅ Compatible con Android API 23+
+===============================================
+           INSTRUCCIONES DE USO
+===============================================
+Para instalar:
+  adb install -r app/build/outputs/apk/debug/app-debug.apk
+Para build release:
+  ./gradlew assembleRelease
+  (Requiere keystore configurado en local.properties)
+Para verificar versión:
+  grep -E "versionCode|versionName" app/build.gradle.kts
+===============================================

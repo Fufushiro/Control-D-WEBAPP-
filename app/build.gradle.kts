@@ -1,6 +1,16 @@
+import java.util.Properties
+import java.io.File
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+}
+
+// Load keystore properties from local.properties
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.inputStream().use { localProperties.load(it) }
 }
 
 android {
@@ -11,18 +21,18 @@ android {
         applicationId = "com.example.controldwebapp"
         minSdk = 23
         targetSdk = 35
-        versionCode = 10
-        versionName = "1.10"
+        versionCode = 11
+        versionName = "1.11"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
         create("release") {
-            val keystoreFile = project.findProperty("KEYSTORE_FILE") as? String
-            val keystorePassword = project.findProperty("KEYSTORE_PASSWORD") as? String
-            val keyAlias = project.findProperty("KEY_ALIAS") as? String
-            val keyPassword = project.findProperty("KEY_PASSWORD") as? String
+            val keystoreFile = localProperties.getProperty("KEYSTORE_FILE")
+            val keystorePassword = localProperties.getProperty("KEYSTORE_PASSWORD")
+            val keyAlias = localProperties.getProperty("KEY_ALIAS")
+            val keyPassword = localProperties.getProperty("KEY_PASSWORD")
 
             if (keystoreFile != null && File(keystoreFile).exists()) {
                 storeFile = file(keystoreFile)

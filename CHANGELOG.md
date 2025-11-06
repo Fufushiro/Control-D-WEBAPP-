@@ -4,6 +4,29 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
 
 ---
 
+## [1.11] - 2025-11-06
+
+### 🐛 Correcciones Críticas
+- **Nombre de la App Corregido**: Cambiado de "ControlD Web" a simplemente "ControlD"
+  - Actualizado `strings.xml` con el nombre correcto
+  - Modificado `AndroidManifest.xml` para usar recurso string
+
+- **Iconos Personalizados Activados**: Los iconos personalizados ahora se muestran correctamente
+  - Configurado `AndroidManifest.xml` para usar `@mipmap/controldns` y `@mipmap/controldns_round`
+  - Los iconos controldns.webp ahora se cargan en lugar del icono por defecto de Android
+
+### 🔧 Mejoras Técnicas
+- **Configuración de Keystore Mejorada**: 
+  - Implementación correcta de carga de `local.properties` en `build.gradle.kts`
+  - Agregados imports necesarios (`java.util.Properties`, `java.io.File`)
+  - Firma de APK funcionando correctamente con credenciales desde `local.properties`
+
+### 📝 Documentación
+- Agregado `VERSION_1.11_FIXES.md` explicando los problemas corregidos
+- Documentación de por qué los problemas existían desde la versión 1.0.0
+
+---
+
 ## [1.10] - 2025-11-06
 
 ### 🆕 Nuevas Funcionalidades

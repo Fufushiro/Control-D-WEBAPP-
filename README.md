@@ -1,4 +1,4 @@
-# ControlD WebApp v1.10
+# ControlD WebApp v1.12
 
 Aplicación Android nativa desarrollada en Kotlin que proporciona una experiencia de navegación completa para el servicio web de ControlD (https://controld.com/) mediante un WebView optimizado, incluyendo una **Progressive Web App (PWA)** integrada con capacidades offline.
 
@@ -10,14 +10,29 @@ Esta aplicación funciona como un contenedor nativo (WebView wrapper) para el si
 
 ControlD es un servicio de DNS personalizable que permite controlar y filtrar el tráfico de internet, bloqueando anuncios, rastreadores, malware y contenido no deseado a nivel de DNS.
 
-## 🆕 Novedades en v1.10
+## 🆕 Novedades en v1.12
 
-### 🔄 Pull to Refresh Mejorado
-- ✅ **Doble Swipe para Refrescar**: Ahora se requieren **2 swipes consecutivos** hacia abajo para refrescar la página
-- ✅ **Prevención de Refrescos Accidentales**: Evita que se refresque la página por accidente al navegar
-- ✅ **Feedback Visual Mejorado**: Mensajes con emojis que indican cuántos swipes faltan
-- ✅ **Timeout Inteligente**: El contador se resetea automáticamente después de 2 segundos de inactividad
-- ✅ **Código Configurable**: Constantes para ajustar fácilmente el número de swipes y el timeout
+### 🎯 Mejoras de UI/UX
+- ✅ **Respeta la Barra de Notificaciones**: El WebView ahora deja espacio para la barra de notificaciones del sistema
+- ✅ **Sin Superposiciones**: El contenido web ya no es interrumpido por elementos del sistema
+- ✅ **Navegación Mejorada**: Experiencia visual más limpia y profesional
+- ✅ **Layout Optimizado**: Uso de `fitsSystemWindows` para gestión correcta de system bars
+
+### ❌ Simplificación de Funcionalidades
+- ✅ **Pull-to-Refresh Eliminado**: Se removió la funcionalidad de pull-to-refresh que causaba errores
+- ✅ **Código Más Limpio**: Eliminación de código innecesario y simplificación de `MainActivity.kt`
+- ✅ **Mejor Rendimiento**: Menos complejidad en la gestión de gestos y eventos
+
+## 📝 Historial de Versiones Recientes
+
+### v1.11 - Correcciones Críticas
+- Nombre de la app corregido a "ControlD"
+- Iconos personalizados activados correctamente
+- Configuración de keystore mejorada
+
+### v1.10 - Pull to Refresh Mejorado (Removido en v1.12)
+- Doble swipe para refrescar (funcionalidad eliminada en v1.12)
+- Feedback visual con mensajes (removido en v1.12)
 
 ### 🌐 Progressive Web App (PWA) Integrada
 La aplicación ahora incluye una **webapp moderna con arquitectura PWA** ubicada en `app/src/main/assets/`:
@@ -117,10 +132,8 @@ La aplicación implementa un WebView Android con todas las funcionalidades neces
 - **Botón Atrás**: El botón de retroceso del dispositivo navega hacia atrás en el historial del WebView
 - **Historial de Navegación**: Mantiene un historial completo de las páginas visitadas dentro de la app
 - **Indicador de Carga**: Barra de progreso circular mientras se cargan las páginas
-- **Pantalla Completa**: Experiencia inmersiva sin barras de navegación del navegador
+- **Sin Pantalla Completa**: Respeta la barra de notificaciones del sistema para mejor UX
 - **Estado de Conexión**: Indicador visual (online/offline) en tiempo real
-- **Pull to Refresh**: Desliza hacia abajo **2 veces consecutivas** para refrescar la página (previene refrescos accidentales)
-- **Timeout Inteligente**: El contador de swipes se reinicia después de 2 segundos de inactividad
 
 ### 🎨 Interfaz de Usuario Moderna
 

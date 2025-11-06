@@ -4,6 +4,30 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
 
 ---
 
+## [1.12] - 2025-11-06
+
+### 🐛 Correcciones de UI/UX
+- **Pantalla Completa Eliminada**: El WebView ahora respeta la barra de notificaciones del sistema
+  - Agregado `android:fitsSystemWindows="true"` al layout principal
+  - Eliminada la superposición de la barra de notificaciones sobre el contenido web
+  - Mejor experiencia de navegación sin interrupciones visuales
+
+### ❌ Funcionalidades Removidas
+- **Pull-to-Refresh Eliminado Completamente**:
+  - Removido `SwipeRefreshLayout` del layout XML
+  - Eliminada toda la lógica de doble swipe y refresh
+  - Eliminados imports innecesarios (`Handler`, `Looper`, `Toast`, `SwipeRefreshLayout`)
+  - Código simplificado y más mantenible
+  - Sin errores relacionados con gestos de swipe
+
+### 🔧 Mejoras de Código
+- Limpieza de código en `MainActivity.kt`
+  - Eliminadas variables no utilizadas (`swipeCount`, `handler`, `resetSwipeCountRunnable`)
+  - Eliminado método `onDestroy()` innecesario
+  - Código más limpio y directo
+
+---
+
 ## [1.11] - 2025-11-06
 
 ### 🐛 Correcciones Críticas

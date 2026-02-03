@@ -83,11 +83,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/fufus
 	android:supportsRtl
 		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:8:9-37
+		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:10:9-63
+		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:10:9-53
 	android:icon
-		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:9:9-58
+		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:9:9-42
 	android:allowBackup
 		ADDED from /home/fufushiro/AndroidStudioProjects/ControlDWEBAPP/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme

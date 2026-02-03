@@ -7,7 +7,8 @@
     <color name="teal_200">#03DAC5</color>
     <color name="teal_700">#018786</color>
     <color name="white">#FFFFFF</color>
-    <string name="app_name">ControlD Web</string>
+    <dimen name="status_bar_height">25dp</dimen>
+    <string name="app_name">ControlD</string>
     <style name="Theme.ControlDWebApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
         <item name="android:navigationBarColor">@color/black</item>

@@ -7,8 +7,13 @@ color purple_700
 color teal_200
 color teal_700
 color white
+dimen status_bar_height
+drawable controldns_background
 id progress
 id webView
 layout activity_main
+mipmap controldns
+mipmap controldns_foreground
+mipmap controldns_round
 string app_name
 style Theme.ControlDWebApp

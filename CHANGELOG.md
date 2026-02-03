@@ -4,6 +4,49 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
 
 ---
 
+## [1.13] - 2026-02-03
+
+### 🎨 Mejoras de UI/UX
+- **Espacio reservado para barra de notificaciones**: WebView ya no cubre la barra de estado
+  - Espaciador de 25dp superior en el layout
+  - Cambio de FrameLayout a LinearLayout para mejor control de espacios
+  - Navegación web mejorada sin superposiciones
+
+### 🚫 Eliminación de Funcionalidades Problemáticas
+- **Pull-to-refresh eliminado**: Causa errores en navegación web
+  - Inyección defensiva de JavaScript bloquea overscroll behavior
+  - Touchmove optimizado para no permitir gestos de refresh
+  
+- **Refresh manual deshabilitado**: Controles innecesarios removidos
+  - Ctrl+R / Cmd+R bloqueado vía JavaScript
+  - F5 y F12 deshabilitados en el navegador
+  - Evita actualizaciones no deseadas de la página
+
+### 🔐 Privacidad Mejorada
+- APIs limitadas: Geolocalización deshabilitada, acceso a archivos restringido
+- Sin fingerprinting: Datos de dispositivo no expuestos al sitio web
+- Minimalismo de permisos: Solo requiere acceso a Internet
+- Seguridad mejorada: No permite abrir ventanas emergentes automáticas
+
+### ⚡ Rendimiento
+- Inyección defensiva mejorada con manejo de eventos
+- CSS defensivo optimizado para bloquear gestos innecesarios
+- Limitación de MutationObservers mantiene scroll fluido
+- Compilación Kotlin corregida: APIs deprecadas removidas
+
+### 🔧 Correcciones Técnicas
+- **Eliminadas propiedades deprecadas en WebSettings**:
+  - `geolocationEnabled` removida (deprecated en API 35)
+  - `userAgent` removida (deprecated en API levels recientes)
+  - Geolocalización ahora controlada únicamente por permisos de Android
+  - User-Agent manejado automáticamente por Android
+
+### 📊 Cambios de Versión
+- versionCode: 12 → 13
+- versionName: "1.12" → "1.13"
+
+---
+
 ## [1.12] - 2025-11-06
 
 ### 🐛 Correcciones de UI/UX
@@ -16,14 +59,13 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
 - **Pull-to-Refresh Eliminado Completamente**:
   - Removido `SwipeRefreshLayout` del layout XML
   - Eliminada toda la lógica de doble swipe y refresh
-  - Eliminados imports innecesarios (`Handler`, `Looper`, `Toast`, `SwipeRefreshLayout`)
+  - Eliminados imports innecesarios
   - Código simplificado y más mantenible
   - Sin errores relacionados con gestos de swipe
 
 ### 🔧 Mejoras de Código
 - Limpieza de código en `MainActivity.kt`
-  - Eliminadas variables no utilizadas (`swipeCount`, `handler`, `resetSwipeCountRunnable`)
-  - Eliminado método `onDestroy()` innecesario
+  - Eliminadas variables no utilizadas
   - Código más limpio y directo
 
 ---
@@ -31,23 +73,18 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
 ## [1.11] - 2025-11-06
 
 ### 🐛 Correcciones Críticas
-- **Nombre de la App Corregido**: Cambiado de "ControlD Web" a simplemente "ControlD"
+- **Nombre de la App Corregido**: Cambiado a "ControlD"
   - Actualizado `strings.xml` con el nombre correcto
   - Modificado `AndroidManifest.xml` para usar recurso string
 
 - **Iconos Personalizados Activados**: Los iconos personalizados ahora se muestran correctamente
   - Configurado `AndroidManifest.xml` para usar `@mipmap/controldns` y `@mipmap/controldns_round`
-  - Los iconos controldns.webp ahora se cargan en lugar del icono por defecto de Android
+  - Los iconos controldns.webp ahora se cargan correctamente
 
 ### 🔧 Mejoras Técnicas
 - **Configuración de Keystore Mejorada**: 
   - Implementación correcta de carga de `local.properties` en `build.gradle.kts`
-  - Agregados imports necesarios (`java.util.Properties`, `java.io.File`)
-  - Firma de APK funcionando correctamente con credenciales desde `local.properties`
-
-### 📝 Documentación
-- Agregado `VERSION_1.11_FIXES.md` explicando los problemas corregidos
-- Documentación de por qué los problemas existían desde la versión 1.0.0
+  - Firma de APK funcionando correctamente con credenciales
 
 ---
 
@@ -58,18 +95,11 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
   - Previene refrescos accidentales durante la navegación
   - Feedback visual mejorado con emojis informativos
   - Timeout inteligente de 2 segundos que resetea el contador automáticamente
-  - Mensajes dinámicos que indican cuántos swipes faltan
 
 ### 🔧 Mejoras Técnicas
 - Constantes configurables (`REQUIRED_SWIPES`, `SWIPE_RESET_DELAY`)
 - Código más mantenible y modular en `MainActivity.kt`
 - Mejor gestión del Handler para evitar memory leaks
-- Documentación actualizada en README.md
-
-### 📝 Documentación
-- Actualizado README.md con nueva funcionalidad
-- Sección "Novedades en v1.10" creada
-- Documentación de navegación actualizada
 
 ---
 
@@ -112,4 +142,3 @@ Todas las actualizaciones notables del proyecto se documentarán en este archivo
 
 **Formato**: [Versión] - Fecha (YYYY-MM-DD)  
 **Tipos de cambios**: 🆕 Nuevas Funcionalidades | 🔧 Mejoras | 🐛 Correcciones | 📝 Documentación | 🔒 Seguridad
-

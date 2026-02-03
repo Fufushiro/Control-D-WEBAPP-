@@ -1,6 +1,78 @@
 [
     {
+        "merged": "com.example.controldwebapp-debug-32:/drawable_controldns_background.xml.flat",
+        "source": "com.example.controldwebapp-main-34:/drawable/controldns_background.xml"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xxhdpi_controldns.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xxhdpi/controldns.webp"
+    },
+    {
         "merged": "com.example.controldwebapp-debug-32:/layout_activity_main.xml.flat",
         "source": "com.example.controldwebapp-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-mdpi_controldns_round.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-mdpi/controldns_round.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-anydpi-v26_controldns.xml.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-anydpi-v26/controldns.xml"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-mdpi_controldns_foreground.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-mdpi/controldns_foreground.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xhdpi_controldns_round.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xhdpi/controldns_round.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xxhdpi_controldns_foreground.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xxhdpi/controldns_foreground.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xhdpi_controldns.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xhdpi/controldns.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-mdpi_controldns.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-mdpi/controldns.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-hdpi_controldns_foreground.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-hdpi/controldns_foreground.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xxxhdpi_controldns.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xxxhdpi/controldns.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xhdpi_controldns_foreground.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xhdpi/controldns_foreground.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xxxhdpi_controldns_round.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xxxhdpi/controldns_round.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xxhdpi_controldns_round.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xxhdpi/controldns_round.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-hdpi_controldns.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-hdpi/controldns.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-xxxhdpi_controldns_foreground.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-xxxhdpi/controldns_foreground.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-hdpi_controldns_round.webp.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-hdpi/controldns_round.webp"
+    },
+    {
+        "merged": "com.example.controldwebapp-debug-32:/mipmap-anydpi-v26_controldns_round.xml.flat",
+        "source": "com.example.controldwebapp-main-34:/mipmap-anydpi-v26/controldns_round.xml"
     }
 ]
